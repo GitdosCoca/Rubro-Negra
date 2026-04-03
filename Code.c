@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 typedef struct tipo_dado {
     int valor;
     //cor (V) vermelho e (P) preto
@@ -14,8 +15,10 @@ typedef struct node {
     struct node *pai;
 } node;
 
+
 // declaraçao do ponteiro da arvore
 typedef node *tree;
+
 
 node* rb_search(node *x, int key);
 node* rb_search_pai(node *x, int key);
@@ -321,3 +324,4 @@ int rb_recurso(node *x) {
         return altura_esq;
     }
 }
+
