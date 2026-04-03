@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 typedef struct tipo_dado{
-int valor; 
-//cor (V) vermelho e (P) preto
+    int valor; 
+    //cor (V) vermelho e (P) preto
 	char cor; 
 }tipo_dado;
 
@@ -16,8 +16,6 @@ typedef struct node{
 // declaraçao do ponteiro da arvore
 typedef node *tree;
 
-
-
 int main(){
 	
 
@@ -25,36 +23,34 @@ int main(){
 	return 0;
 }
 
-
 void rb_insert(node **tree, int key){
 	
 }
 
-
-
 node rb_search(node *tree, int key){
-		if(tree->info->valor == key){
-			return tree;
-}
+	if(tree->info->valor == key){
+		return tree;
+    }
 
-if(tree->info->valor < key){
-			rb_search(tree->dir, key);
-}else if(tree->info->valor > key){
-	rb_search(tree->esq, key);
-}
+    if(tree->info->valor < key){
+		rb_search(tree->dir, key);
+    }
+    else if(tree->info->valor > key){
+	    rb_search(tree->esq, key);
+    }
 	
 	return NULL;
 }
+
 node rb_search(node *tree, int key){
 	node aux = malloc(sizeof(node));
 	aux = tree;
-while(aux->info->valor != key){
+    while(aux->info->valor != key){
 		if(aux->info->valor < key){
 			aux = aux->dir;
-}else if(aux->info->valor > key){
-	aux = aux->esq;
-}
-}
-
+        }else if(aux->info->valor > key){
+	        aux = aux->esq;
+        }
+    }
 }
 
