@@ -25,15 +25,16 @@ void left_rotate(node **raiz, node *x);
 void right_rotate(node **raiz, node *x);
 int rb_valid(node *raiz);
 int rb_recurso(node *x);
-void exibir_menu();
+
 
 
 int main(){
     node *raiz = NULL;
-    int opcao, valor;
+    int opcao = 0;
+    int  valor;
     node *resultado = NULL;
 
-    do {
+    while(opcao != 5) {
 	printf("\n--- ARVORE RUBRO-NEGRA ---");
     	printf("\n1. Inserir");
     	printf("\n2. Remover");
@@ -42,9 +43,7 @@ int main(){
     	printf("\n5. Sair");
     	printf("\nEscolha: "); 
 
-        if(scanf("%d", &opcao) != 1){
-            break;
-        }
+        scanf("%d", &opcao);
 
         switch(opcao){
             case 1:
@@ -76,7 +75,7 @@ int main(){
                 printf("Saindo...\n");
                 break;
         }
-    } while(opcao != 5);
+    }
     return 0;
 }
 
