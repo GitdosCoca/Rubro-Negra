@@ -22,13 +22,12 @@
 
 ## 📊 Análise de Complexidade
 
-| Operação | ABB (Pior Caso) | Árvore AVL | Árvore Rubro-Negra |
-| :--- | :--- | :--- | :--- |
-| **Busca** | $O(n)$ | $O(\log n)$ | [cite_start]$O(\log n)$ [cite: 179] |
-| **Inserção** | $O(n)$ | $O(\log n)$ | [cite_start]$O(\log n)$ [cite: 179] |
-| **Remoção** | $O(n)$ | $O(\log n)$ | [cite_start]$O(\log n)$ [cite: 179] |
-| **Rotações (Inserção)** | N/A | $O(1)$ (máx. 2) | [cite_start]$O(1)$ (máx. 2) [cite: 179] |
-| **Rotações (Remoção)** | N/A | $O(\log n)$ | [cite_start]$O(1)$ (máx. 3) [cite: 179] |
+| Operação | ABB  | AVL      | Rubro-Negra |
+| -------- | ---- | -------- | ----------- |
+| Busca    | O(n) | O(log n) | O(log n)    |
+| Inserção | O(n) | O(log n) | O(log n)    |
+| Remoção  | O(n) | O(log n) | O(log n)    |
+
 
 ---
 
